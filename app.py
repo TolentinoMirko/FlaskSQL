@@ -18,6 +18,8 @@ def result():
     dfprodotti = pd.read_sql(query,conn)
     
     #3 visualizzare le info 
+
+    
     
     return render_template('result.html', nomiColonne = dfprodotti.columns.values, dati = list(dfprodotti.values.tolist()))
 
